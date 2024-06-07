@@ -25,6 +25,7 @@ SECRET_KEY = 'django-insecure-3yjd9_75#@9nb40l-!-r@7c)bzq5=(xlqyka9%e$s06l#v!fb7
 DEBUG = True
 
 ALLOWED_HOSTS = ['djangotamimstore.onrender.com']
+CSRF_TRUSTED_ORIGINS = ['djangotamimstore.onrender.com']
 
 # Application definition
 

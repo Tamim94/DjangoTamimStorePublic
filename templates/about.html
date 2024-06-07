@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block title %}About{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+  <div class="row justify-content-center">
+    <div class="col-md-8">
+      <div class="card shadow-sm rounded-4">
+        <div class="card-body">
+          <h1 class="card-title text-center mb-4">About This Project</h1>
+
+          <p>
+            J'ai réalisé ce projet pour expérimenter et rafraîchir mes compétences en Django et en utilisation d'API (page de produits), ainsi qu'en CRUD (page de blog). C'est un framework que je n'utilise pas fréquemment, et je suis satisfait du résultat ! J'ai aussi implementé un système d'envoi de mail pour la réinitialisation de mot de passe pour la  de creation du user.
+          </p>
+
+          <div class="text-center mt-4">
+            <a href="https://tamimg-portfolio.web.app" target="_blank" class="btn btn-primary me-3">Mon Portfolio</a>
+            <a href="https://github.com/Tamim94" target="_blank" class="btn btn-secondary">Mon GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block extra_styles %}
+<style>
+  .card-body {
+    text-align: justify; 
+  }
+</style>
+{% endblock %}

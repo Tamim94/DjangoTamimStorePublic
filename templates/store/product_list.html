@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block title %}Product List{% endblock %}
+
+{% block content %}
+    <h1 class="mb-4 text-center"> Our products lists : (remember it's an api)</h1>
+
+    <div class="container">
+        <div class="row">
+            {% for product in products %}
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100 shadow-sm rounded-4"> 
+                        <img class="card-img-top rounded-top-4" src="{{ product.image }}" alt="{{ product.title }}">
+                        <div class="card-body">
+                            <h5 class="card-title text-primary">{{ product.title }}</h5>
+                            <p class="card-text">{{ product.description|truncatewords:25 }}</p> 
+                        </div>
+                        <div class="card-footer d-flex justify-content-between align-items-center">
+                            <span class="text-success">Price: ${{ product.price }}</span>
+                           <a href="{% url 'product_detail' product.id %}" class="btn btn-primary btn-sm">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}

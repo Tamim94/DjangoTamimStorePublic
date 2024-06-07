@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block title %}Blog{% endblock %}
+
+{% block content %}
+    <div class="container mt-4">
+        <h1 class="mb-4">Blog Posts</h1>
+
+        {% if user.is_authenticated %}
+            <div class="mb-4">
+                <a href="{% url 'post_create' %}" class="btn btn-primary">Create Post</a>
+            </div>
+        {% endif %}
+
+        {% for post in posts %}
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h2 class="card-title"><a href="{% url 'post_detail' post.pk %}">{{ post.title }}</a></h2>
+                    <p class="card-text">{{ post.content|truncatewords:30 }}</p>
+                    <small class="text-muted">Published on {{ post.created_at }} by {{ post.user.username }}</small>
+                </div>
+            </div>
+        {% empty %}
+            <p>No blog posts yet :( </p>
+        {% endfor %}
+    </div>
+{% endblock %}

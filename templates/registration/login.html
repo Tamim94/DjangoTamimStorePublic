@@ -11,24 +11,20 @@
           <form method="post" class="form">
             {% csrf_token %}
 
+            {% if form.non_field_errors %}
+              <div class="alert alert-danger">
+                {{ form.non_field_errors }}
+              </div>
+            {% endif %}
+
             <div class="mb-3">
               {{ form.username.label_tag }}
               {{ form.username }}
-              {% if form.username.errors %}
-                <div class="invalid-feedback">
-                  {{ form.username.errors }}
-                </div>
-              {% endif %}
             </div>
 
             <div class="mb-3">
               {{ form.password.label_tag }}
               {{ form.password }}
-              {% if form.password.errors %}
-                <div class="invalid-feedback">
-                  {{ form.password.errors }}
-                </div>
-              {% endif %}
             </div>
 
             <button type="submit" class="btn btn-primary w-100">Login</button>
@@ -36,6 +32,7 @@
 
           <div class="mt-3 text-center">
             <p>Don't have an account? <a href="{% url 'login' %}">Sign up</a></p>
+            <p><a href="{% url 'password_reset' %}">Forgot your password?</a></p>
           </div>
         </div>
       </div>

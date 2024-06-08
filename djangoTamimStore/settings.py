@@ -22,7 +22,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-3yjd9_75#@9nb40l-!-r@7c)bzq5=(xlqyka9%e$s06l#v!fb7'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['djangotamimstore.onrender.com']  #
 CSRF_TRUSTED_ORIGINS = ['https://djangotamimstore.onrender.com']

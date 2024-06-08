@@ -26,6 +26,7 @@ DEBUG = False
 
 ALLOWED_HOSTS = ['djangotamimstore.onrender.com']  #
 CSRF_TRUSTED_ORIGINS = ['https://djangotamimstore.onrender.com']
+CSRF_COOKIE_SECURE = True
 
 # Application definition
 

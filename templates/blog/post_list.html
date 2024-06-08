@@ -10,6 +10,10 @@
             <div class="mb-4">
                 <a href="{% url 'post_create' %}" class="btn btn-primary">Create Post</a>
             </div>
+        {% else %}
+            <div class="mb-4">
+                <p>You need to be logged in to create a post. (I added this especially to avoid bots spam just in case)</p>
+            </div>
         {% endif %}
 
         {% for post in posts %}

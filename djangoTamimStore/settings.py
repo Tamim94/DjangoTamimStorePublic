@@ -34,7 +34,7 @@ INSTALLED_APPS = [
     'registration',
     'django.contrib.admin',
     'store',
-
+    'widget_tweaks',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',

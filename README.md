@@ -1,8 +1,8 @@
-##Mon projet en ligne : https://djangotamimstore.onrender.com
+## Mon projet en ligne : https://djangotamimstore.onrender.com
 
 Ce projet Django est hébergé sur Render et est déployé à partir de mon dépôt privé (DjangoTamimStore). J'ai créé ce dépôt public (DjangotamimStorePublic) car je ne pouvais pas partager mes informations sensibles (credentials SMTP, super utilisateur de la base de données) publiquement.
 
-##Installation
+## Installation
 
 Assurez-vous d'avoir Django installé : 
     ```
@@ -20,7 +20,7 @@ Effectuez les migrations :
 Ajoutez vos propres paramètres SMTP dans settings.py
 Ajustez les STATIC_URL et générez les fichiers statiques si nécessaire.
 
-#Fonctionnalités
+## Fonctionnalités
 
 **Boutique en ligne**: Intégration d'une API pour la gestion des produits.
 **Blog**: Système CRUD pour créer, lire, mettre à jour et supprimer des articles.
@@ -30,7 +30,12 @@ Ajustez les STATIC_URL et générez les fichiers statiques si nécessaire.
 
 #Ce projet est un terrain d'expérimentation pour mes compétences en Django, notamment l'intégration d'API, le CRUD et l'authentification surtout de deployer une application django full stack.
 
-////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
 ## Live Project
 
 You can access the live project at [https://djangotamimstore.onrender.com](https://djangotamimstore.onrender.com)

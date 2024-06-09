@@ -19,14 +19,14 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-3yjd9_75#@9nb40l-!-r@7c)bzq5=(xlqyka9%e$s06l#v!fb7'
+SECRET_KEY = ''
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = True # i put false on the deployed repositery of course !
 
-ALLOWED_HOSTS = ['djangotamimstore.onrender.com']  #
-CSRF_TRUSTED_ORIGINS = ['https://djangotamimstore.onrender.com']
-CSRF_COOKIE_SECURE = True
+ALLOWED_HOSTS = []  
+#CSRF_TRUSTED_ORIGINS = []
+#CSRF_COOKIE_SECURE = True
 
 # Application definition
 
@@ -43,14 +43,6 @@ INSTALLED_APPS = [
 
 ]
 ACCOUNT_ACTIVATION_DAYS = 7  # One-week activation window; you may, of course, use a different value.
-REGISTRATION_AUTO_LOGIN = True  # Automatically log the user in.
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'smtp.mailersend.net'
-EMAIL_PORT = 587
-EMAIL_USE_TLS = True
-EMAIL_HOST_USER = 'MS_vLM8n9@trial-pr9084zyn6mgw63d.mlsender.net'
-EMAIL_HOST_PASSWORD = 'aOlohdsLbyMvRC87'
-DEFAULT_FROM_EMAIL = 'MS_vLM8n9@trial-pr9084zyn6mgw63d.mlsender.net'
 LOGIN_REDIRECT_URL = 'product_list'
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

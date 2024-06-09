@@ -1,8 +1,8 @@
-Mon projet en ligne : https://djangotamimstore.onrender.com
+#Mon projet en ligne : https://djangotamimstore.onrender.com
 
 Ce projet Django est hébergé sur Render et est déployé à partir de mon dépôt privé (DjangoTamimStore). J'ai créé ce dépôt public (DjangotamimStorePublic) car je ne pouvais pas partager mes informations sensibles (credentials SMTP, super utilisateur de la base de données) publiquement.
 
-Installation
+#Installation
 
 Assurez-vous d'avoir Django installé : pip install Django
 Installez les dépendances : pip install -r requirements.txt
@@ -10,7 +10,7 @@ Effectuez les migrations : python manage.py makemigrations puis python manage.py
 Ajoutez vos propres paramètres SMTP dans settings.py
 Ajustez les STATIC_URL et générez les fichiers statiques si nécessaire.
 
-Fonctionnalités
+#Fonctionnalités
 
 Boutique en ligne : Intégration d'une API pour la gestion des produits.
 Blog : Système CRUD pour créer, lire, mettre à jour et supprimer des articles.
@@ -18,13 +18,14 @@ Authentification : Les super utilisateurs peuvent gérer les utilisateurs et les
 Sécurité : Envoi de mails de vérification lors de l'inscription et de la réinitialisation de mot de passe pour prévenir les abus.
 
 
-Ce projet est un terrain d'expérimentation pour mes compétences en Django, notamment l'intégration d'API, le CRUD et l'authentification surtout de deployer une application django full stack.
+#Ce projet est un terrain d'expérimentation pour mes compétences en Django, notamment l'intégration d'API, le CRUD et l'authentification surtout de deployer une application django full stack.
+
 ////////////////////////////////////////////////////////////////////////////////////////
-My live project: https://djangotamimstore.onrender.com
+#My live project: https://djangotamimstore.onrender.com
 
 This Django project is deployed on Render from my private repository (DjangoTamimStore). I created this public repository (DjangotamimStorePublic) because I couldn't share my sensitive information (SMTP credentials, database superuser) publicly.
 
-Installation
+#Installation
 
 Make sure you have Django installed: pip install Django
 Install the dependencies: pip install -r requirements.txt
@@ -38,4 +39,4 @@ Authentication: Superusers can manage users and posts.
 Security: Verification emails sent upon signup and password reset to prevent abuse.
 
 
-This project is a playground for my Django skills, especially API integration, CRUD, and authentication.
+#This project is a playground for my Django skills, especially API integration, CRUD, and authentication.

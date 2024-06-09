@@ -28,6 +28,8 @@ ALLOWED_HOSTS = []
 #CSRF_TRUSTED_ORIGINS = []
 #CSRF_COOKIE_SECURE = True
 
+#your smtp settings there
+
 # Application definition
 
 INSTALLED_APPS = [

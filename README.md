@@ -1,4 +1,4 @@
-## Mon projet en ligne : https://djangotamimstore.onrender.com
+## Mon projet en ligne : https://djangotamimstore.onrender.com  (Can take time to load because of the deployment service)
 
 Ce projet Django est hébergé sur Render et est déployé à partir de mon dépôt privé (DjangoTamimStore). J'ai créé ce dépôt public (DjangotamimStorePublic) car je ne pouvais pas partager mes informations sensibles (credentials SMTP, super utilisateur de la base de données) publiquement.
 

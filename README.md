@@ -28,7 +28,7 @@ Ajustez les STATIC_URL et générez les fichiers statiques si nécessaire.
 **Sécurité**: Envoi de mails de vérification lors de l'inscription et de la réinitialisation de mot de passe pour prévenir les abus.
 
 
-#Ce projet est un terrain d'expérimentation pour mes compétences en Django, notamment l'intégration d'API, le CRUD et l'authentification surtout de deployer une application django full stack.
+## Ce projet est un terrain d’expérimentation pour mes compétences en Django, notamment l’intégration d’API, le CRUD, l’authentification et surtout pour déployer une application Django full-stack.
 
 
 
